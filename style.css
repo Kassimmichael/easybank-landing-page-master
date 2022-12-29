@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+}
+
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+  font-family: 'Public Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: hsl(0, 0%, 100%);
+  padding: 5px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation li a {
+  position: relative;
+  margin-left: 20px;
+  color: hsl(233, 8%, 62%);
+}
+
+.navigation li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -35px;
+  width: 0;
+  height: 4px;
+  background: hsl(233, 8%, 62%);
+  transition: all .5s;
+}
+
+.navigation li a:hover::after {
+  width: 100%;
+}
+
+.dropdown-toggle {
+  display: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+span, p {
+  color: hsl(233, 8%, 62%);
+}
+
+.details {
+  background-color: hsl(0, 0%, 98%);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 98vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.brief_details {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  transform: translate(40%, -40%);
+}
+
+.request_invite_btn {
+  display: grid;
+  border: none;
+  outline: none;
+  all: unset;
+  width: 7em;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color: hsl(0, 0%, 100%);
+  margin: 20px 0;
+  padding: 10px 40px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.brief_details h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: hsl(233, 26%, 24%);
+}
+
+.brief_details p {
+  line-height: 1.5;
+}
+
+.mockup {
+  background: url(./images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50px;
+  background-position-y: -80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mockup img {
+  width: 80%;
+  transform: translate(148px, -58px);
+}
+
+.reason {
+  background-color: hsl(220, 16%, 96%);
+  padding: 100px 50px;
+}
+
