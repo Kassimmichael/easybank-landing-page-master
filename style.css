@@ -339,6 +339,7 @@ footer ul {
 
   .brief_details h1 {
     width: 95%;
+    font-size: 40px;
   }
 
   .brief_details span {
@@ -431,4 +432,15 @@ footer ul {
     font-size: 20px;
   }
 
+}
+
+@media screen and (max-width: 400px) {
+  .brief_details h1 {
+    font-size: 35px;
+    font-weight: 300;
+  }
+
+  .benefit h1 {
+    font-size: 35px;
+  }
 }
